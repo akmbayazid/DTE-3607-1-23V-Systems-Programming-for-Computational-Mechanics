@@ -1,0 +1,51 @@
+# ninja log v5
+36	1906	7016129886615427	benchmarking/CMakeFiles/benchmark_my_dummy_bechmarks.dir/benchmarks/my_dummy_bechmarks.cpp.obj	6263789d18f4b8b8
+37	8875	7042145825980027	testing/CMakeFiles/unittest_predef_solver_dev_level4.dir/unittests/predefined/predef_solver_dev_level4.cpp.obj	d6ea524fd9229f59
+2041	3743	7016129905334998	testing/unittest_my_dummy_unittests.exe	cf12265634213e9a
+2041	3743	7016129905334998	testing/unittest_my_dummy_unittests[1]_tests.cmake	cf12265634213e9a
+8	8833	7016129955935485	testing/CMakeFiles/unittest_predef_mech_sp_vs_fpl_response.dir/unittests/predefined/predef_mech_sp_vs_fpl_response.cpp.obj	fceacbac4edf676d
+33	2040	7016129888026519	testing/CMakeFiles/unittest_my_dummy_unittests.dir/unittests/my_dummy_unittests.cpp.obj	ab1264f175432afb
+8833	10337	7016129971324119	testing/unittest_predef_mech_sp_vs_fpl_response.exe	2bba41b1c157cf21
+2041	3743	7016129905334998	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_my_dummy_unittests[1]_tests.cmake	cf12265634213e9a
+1907	3873	7016129898362012	benchmarking/benchmark_my_dummy_bechmarks.exe	49a0da53d0eace24
+8846	10018	7042145837292157	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_mech_sp_vs_fpl_detection[1]_tests.cmake	ddbc14f04562ede9
+14	8771	7016129955177235	testing/CMakeFiles/unittest_predef_mech_sp_vs_sp_response.dir/unittests/predefined/predef_mech_sp_vs_sp_response.cpp.obj	33a45c13a1554f1d
+8963	10049	7042145837771158	testing/unittest_predef_solver_dev_level3[1]_tests.cmake	13eb5c20928b2415
+17	8833	7042145825335654	testing/CMakeFiles/unittest_predef_mech_sp_vs_sp_detection.dir/unittests/predefined/predef_mech_sp_vs_sp_detection.cpp.obj	904a151bfaf3b4e4
+10	8846	7042145825526133	testing/CMakeFiles/unittest_predef_mech_sp_vs_fpl_detection.dir/unittests/predefined/predef_mech_sp_vs_fpl_detection.cpp.obj	ca52eaef49c43079
+6	8818	7042145825335654	testing/CMakeFiles/unittest_predef_mech_compute_trajectory.dir/unittests/predefined/predef_mech_compute_trajectory.cpp.obj	6d23ec7827f585f
+32	8962	7042145826872437	testing/CMakeFiles/unittest_predef_solver_dev_level3.dir/unittests/predefined/predef_solver_dev_level3.cpp.obj	e102630355ed1755
+8820	10100	7042145838327366	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_mech_compute_trajectory[1]_tests.cmake	bd9d2b06489c264c
+13	11397	7071759260074199	testing/CMakeFiles/unittest_predef_solver_dev_level2.dir/unittests/predefined/predef_solver_dev_level2.cpp.obj	1202175a9affd618
+22	9383	7042145831016884	testing/CMakeFiles/unittest_predef_solver_dev_level1.dir/unittests/predefined/predef_solver_dev_level1.cpp.obj	6a9a1f77616255a0
+8833	10337	7016129971324119	testing/unittest_predef_mech_sp_vs_fpl_response[1]_tests.cmake	2bba41b1c157cf21
+9137	10111	7071753788737100	testing/unittest_predef_solver_dev_level2[1]_tests.cmake	cd7c4be8fbe9ac5f
+8833	10337	7016129971324119	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_mech_sp_vs_fpl_response[1]_tests.cmake	2bba41b1c157cf21
+8963	10049	7042145837771158	testing/unittest_predef_solver_dev_level3.exe	13eb5c20928b2415
+8782	10394	7016129971881400	testing/unittest_predef_mech_sp_vs_sp_response.exe	da1dd3b3262ef74a
+8782	10394	7016129971881400	testing/unittest_predef_mech_sp_vs_sp_response[1]_tests.cmake	da1dd3b3262ef74a
+8833	10023	7042145837312152	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_mech_sp_vs_sp_detection[1]_tests.cmake	ac9d4d1267d47aa3
+8782	10394	7016129971881400	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_mech_sp_vs_sp_response[1]_tests.cmake	da1dd3b3262ef74a
+8846	10018	7042145837292157	testing/unittest_predef_mech_sp_vs_fpl_detection.exe	ddbc14f04562ede9
+8846	10018	7042145837292157	testing/unittest_predef_mech_sp_vs_fpl_detection[1]_tests.cmake	ddbc14f04562ede9
+8820	10100	7042145838327366	testing/unittest_predef_mech_compute_trajectory.exe	bd9d2b06489c264c
+8833	10023	7042145837312152	testing/unittest_predef_mech_sp_vs_sp_detection[1]_tests.cmake	ac9d4d1267d47aa3
+8820	10100	7042145838327366	testing/unittest_predef_mech_compute_trajectory[1]_tests.cmake	bd9d2b06489c264c
+9384	10282	7042145840168386	testing/unittest_predef_solver_dev_level1.exe	ce5cc354829f9866
+8963	10049	7042145837771158	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_solver_dev_level3[1]_tests.cmake	13eb5c20928b2415
+8876	10003	7042145837292157	testing/unittest_predef_solver_dev_level4.exe	1c96c342a0a2a2c2
+8876	10003	7042145837292157	testing/unittest_predef_solver_dev_level4[1]_tests.cmake	1c96c342a0a2a2c2
+8876	10003	7042145837292157	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_solver_dev_level4[1]_tests.cmake	1c96c342a0a2a2c2
+8833	10023	7042145837312152	testing/unittest_predef_mech_sp_vs_sp_detection.exe	ac9d4d1267d47aa3
+9384	10282	7042145840168386	testing/unittest_predef_solver_dev_level1[1]_tests.cmake	ce5cc354829f9866
+9384	10282	7042145840168386	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_solver_dev_level1[1]_tests.cmake	ce5cc354829f9866
+9137	10111	7071753788737100	testing/unittest_predef_solver_dev_level2.exe	cd7c4be8fbe9ac5f
+9137	10111	7071753788737100	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_solver_dev_level2[1]_tests.cmake	cd7c4be8fbe9ac5f
+8	1171	7071762009249312	testing/unittest_predef_solver_dev_level2.exe	cd7c4be8fbe9ac5f
+8	1171	7071762009249312	testing/unittest_predef_solver_dev_level2[1]_tests.cmake	cd7c4be8fbe9ac5f
+8	1171	7071762009249312	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_solver_dev_level2[1]_tests.cmake	cd7c4be8fbe9ac5f
+7	6835	7071997055631465	testing/CMakeFiles/unittest_predef_solver_dev_level2.dir/unittests/predefined/predef_solver_dev_level2.cpp.obj	1202175a9affd618
+6	6724	7072135369366538	testing/CMakeFiles/unittest_predef_solver_dev_level2.dir/unittests/predefined/predef_solver_dev_level2.cpp.obj	1202175a9affd618
+6	18324	7072163428240242	testing/unittest_predef_solver_dev_level2.exe	cd7c4be8fbe9ac5f
+6	18324	7072163428240242	testing/unittest_predef_solver_dev_level2[1]_tests.cmake	cd7c4be8fbe9ac5f
+6	18324	7072163428240242	C:/DTE-3607-1 23V Systems Programming for Computational Mechanics/Build/testing/unittest_predef_solver_dev_level2[1]_tests.cmake	cd7c4be8fbe9ac5f
