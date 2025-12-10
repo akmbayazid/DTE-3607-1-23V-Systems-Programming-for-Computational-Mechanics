@@ -1,0 +1,171 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Test Scenes/Collision Test Scene #3.tscn" type="PackedScene" id=1]
+[ext_resource path="res://HiD and Camera Control.tscn" type="PackedScene" id=2]
+[ext_resource path="res://WorldEnvironment.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Test Scenes/Collision Test Scene #2.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Test Scenes/Collision Test Scene #1.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Test Scenes/Collision Test Scene #4.tscn" type="PackedScene" id=6]
+[ext_resource path="res://KinematicBody.gd" type="Script" id=7]
+[ext_resource path="res://RigidBody.gd" type="Script" id=8]
+
+[sub_resource type="ProceduralSky" id=2]
+
+[sub_resource type="Environment" id=1]
+background_mode = 2
+background_sky = SubResource( 2 )
+tonemap_mode = 2
+tonemap_white = 16.0
+
+[sub_resource type="PhysicsMaterial" id=21]
+
+[sub_resource type="Shader" id=13]
+code = "shader_type spatial;
+void fragment() {
+  METALLIC = 0.0;
+  ROUGHNESS = 0.01;
+  ALBEDO = vec3(0.1, 0.2, 0.5);
+}"
+
+[sub_resource type="ShaderMaterial" id=14]
+shader = SubResource( 13 )
+
+[sub_resource type="CubeMesh" id=12]
+material = SubResource( 14 )
+size = Vector3( 3, 2, 5 )
+
+[sub_resource type="BoxShape" id=9]
+extents = Vector3( 8.67336, 0.868099, nan )
+
+[sub_resource type="PhysicsMaterial" id=10]
+bounce = 10.0
+
+[sub_resource type="Shader" id=6]
+code = "shader_type spatial;
+void fragment(){
+	METALLIC=0.0;
+	ROUGHNESS=0.01;
+	ALBEDO=vec3(0.1,0.3,0.9);
+}"
+
+[sub_resource type="ShaderMaterial" id=7]
+shader = SubResource( 6 )
+
+[sub_resource type="SphereMesh" id=8]
+material = SubResource( 7 )
+
+[sub_resource type="SphereShape" id=11]
+
+[sub_resource type="Shader" id=15]
+code = "shader_type spatial;
+void fragment() {
+  METALLIC = 0.0;
+  ROUGHNESS = 0.01;
+  ALBEDO = vec3(0.7, 0.3, 0.5);
+}"
+
+[sub_resource type="ShaderMaterial" id=16]
+shader = SubResource( 15 )
+
+[sub_resource type="SphereMesh" id=17]
+material = SubResource( 16 )
+
+[sub_resource type="Shader" id=18]
+code = "shader_type spatial;
+void fragment() {
+  METALLIC = 0.0;
+  ROUGHNESS = 0.01;
+  ALBEDO = vec3(0.5, 0.7, 0.5);
+}"
+
+[sub_resource type="ShaderMaterial" id=19]
+shader = SubResource( 18 )
+
+[sub_resource type="SphereMesh" id=20]
+material = SubResource( 19 )
+
+[sub_resource type="Shader" id=22]
+code = "shader_type spatial;
+void fragment() {
+  METALLIC = 0.0;
+  ROUGHNESS = 0.01;
+  ALBEDO = vec3(0.1, 0.3, 0.2);
+}"
+
+[sub_resource type="ShaderMaterial" id=23]
+shader = SubResource( 22 )
+
+[sub_resource type="SphereMesh" id=24]
+material = SubResource( 23 )
+
+[node name="Main" type="Spatial"]
+
+[node name="Stuff" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.133613 )
+visible = false
+
+[node name="WorldEnvironment" parent="Stuff" instance=ExtResource( 3 )]
+environment = SubResource( 1 )
+
+[node name="HiD and Camera Control" parent="Stuff" instance=ExtResource( 2 )]
+
+[node name="Collision Test Scene #3" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15136, 0.592345, 0.260247 )
+visible = false
+
+[node name="Collision Test Scene #1" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.31932, 0.245953, 9.55826 )
+visible = false
+
+[node name="Collision Test Scene #2" parent="." instance=ExtResource( 4 )]
+visible = false
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 0.998542, -0.0539743, 3.69564e-09, 0.0539743, 0.998542, -1.36834e-07, 3.69528e-09, 1.36834e-07, 1, 0, 0, 0 )
+
+[node name="StaticBody" type="StaticBody" parent="Spatial"]
+transform = Transform( -0.998512, -0.0545319, 5.06659e-06, 0.0545319, -0.998512, -1.38249e-07, 5.06659e-06, 1.38248e-07, 1, 0, 0, 0 )
+physics_material_override = SubResource( 21 )
+
+[node name="MeshInstance" type="MeshInstance" parent="Spatial/StaticBody"]
+transform = Transform( 8.36747, 0.109537, 1.31904e-06, -0.109537, 8.36747, -1.40796e-06, -2.01083e-05, 2.09083e-05, 0.55655, -1.65114, 9.94132, 7.04989e-05 )
+mesh = SubResource( 12 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="Spatial/StaticBody"]
+shape = SubResource( 9 )
+
+[node name="KinematicBody" type="KinematicBody" parent="."]
+script = ExtResource( 7 )
+
+[node name="RigidBody" type="RigidBody" parent="KinematicBody"]
+physics_material_override = SubResource( 10 )
+script = ExtResource( 8 )
+
+[node name="MeshInstance" type="MeshInstance" parent="KinematicBody/RigidBody"]
+transform = Transform( -0.405075, 0.695961, 1.2599e-06, -0.695961, -0.405075, -2.19107e-06, -1.01455e-06, -1.76439e-06, 1, 0.62392, 0.195893, -3.05176e-05 )
+mesh = SubResource( 8 )
+material/0 = null
+
+[node name="CollisionShape" type="CollisionShape" parent="KinematicBody/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -0.113212, 0.0979424, 0 )
+shape = SubResource( 11 )
+
+[node name="MeshInstance2" type="MeshInstance" parent="KinematicBody/RigidBody"]
+transform = Transform( 0.291136, 0.956681, 1.7971e-06, -0.956681, 0.291136, 2.42536e-06, 1.7971e-06, -2.42536e-06, 1, 5, 0, 0 )
+mesh = SubResource( 17 )
+material/0 = null
+
+[node name="MeshInstance3" type="MeshInstance" parent="KinematicBody/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 2.84037, -0.0979419, 0 )
+mesh = SubResource( 20 )
+material/0 = null
+
+[node name="MeshInstance4" type="MeshInstance" parent="KinematicBody/RigidBody"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.99455, 0.290035, 0 )
+mesh = SubResource( 24 )
+material/0 = null
+
+[node name="Collision Test Scene #4" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4822, -2.39127, -1.00225 )
+visible = false
